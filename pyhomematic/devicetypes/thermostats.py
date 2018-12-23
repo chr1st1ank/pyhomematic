@@ -164,7 +164,7 @@ class ThermostatWall(HMThermostat, AreaThermostat, HelperBatteryState, HelperRss
         self.ATTRIBUTENODE.update({"CONTROL_MODE": [2], "BATTERY_STATE": [2]})
 
 
-class ThermostatWall2(HMThermostat, AreaThermostat, HelperLowBat):
+class ThermostatWall2(HMThermostat, AreaThermostat):
     """
     HM-CC-TC
     ClimateControl-Wall Thermostat that measures temperature and allows to set a target temperature or use some automatic mode.
@@ -351,9 +351,12 @@ DEVICETYPES = {
     "HMIP-eTRV": IPThermostat,
     "HmIP-eTRV": IPThermostat,
     "HmIP-eTRV-2": IPThermostat,
+    "HmIP-eTRV-B": IPThermostat,
+    "HmIP-eTRV-B1": IPThermostat,
     "HmIP-STHD": IPThermostatWall,
     "HmIP-STH": IPThermostatWall,
     "HmIP-WTH-2": IPThermostatWall,
+    "HMIP-WTH-2": IPThermostatWall,
     "HMIP-WTH": IPThermostatWall,
     "HmIP-WTH": IPThermostatWall,
     "HmIP-BWTH": IPThermostatWall230V,
